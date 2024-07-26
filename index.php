@@ -3783,3 +3783,8 @@ echo "Функция mail не работает, свяжитесь с адми�
 strpos($_SERVER["HTTP_HOST"], 'spb.wlgdev.ru')!==false
 
 CSite::InDir('/l/') && $_REQUEST['var']=='l3.2'
+
+
+// Свободное место
+echo intval(@disk_free_space($_SERVER["DOCUMENT_ROOT"])/1024/1024)." Mb"
+	
